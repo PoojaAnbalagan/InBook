@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InBook - Book Your Perfect Game Space</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <div class="logo-icon"><img src="/assets/Logo2.png" height="30px" weight="30px" alt="logo"></div>
+                    <h1>InBook</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#browse">Browse</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="btn btn-login">Login</button>
+                <button class="btn btn-register">Register</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Book Your Perfect Game Space</h1>
+        <p>Discover and reserve premium indoor stadiums instantly</p>
+        
+        <div class="search-bar">
+            <div class="search-field">
+                <span>📍</span>
+                <select>
+                    <option>Location</option>
+                    <option>Downtown</option>
+                    <option>Midtown</option>
+                    <option>Brooklyn</option>
+                </select>
+            </div>
+            <div class="search-field">
+                <span>⚽</span>
+                <select>
+                    <option>Sport Type</option>
+                    <option>Badminton</option>
+                    <option>Basketball</option>
+                    <option>Tennis</option>
+                    <option>Football</option>
+                </select>
+            </div>
+            <div class="search-field">
+                <span>📅</span>
+                <input type="date" placeholder="Date">
+            </div>
+            <div class="search-field">
+                <span>🕐</span>
+                <select>
+                    <option>Time</option>
+                    <option>Morning</option>
+                    <option>Afternoon</option>
+                    <option>Evening</option>
+                </select>
+            </div>
+            <button class="btn search-btn">🔍 Search</button>
+        </div>
+
+        <a href="#stadiums" class="btn-explore">Explore Stadiums</a>
+    </section>
+
+    <!-- Popular Stadiums -->
+    <section id="stadiums">
+        <div class="section-header">
+            <h2>Popular Stadiums Near You</h2>
+            <p>Discover top-rated facilities in your area</p>
+        </div>
+
+        <div class="stadium-grid">
+            <div class="stadium-card">
+                <div style="position: relative;">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%23d4a574' width='400' height='300'/%3E%3Cpath fill='%23a8753a' d='M50 150 L200 100 L350 150 L350 280 L50 280 Z'/%3E%3Crect fill='%23c8102e' x='150' y='130' width='100' height='2'/%3E%3C/svg%3E" alt="Badminton Arena" class="stadium-img">
+                    <div class="sport-badge">Badminton</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Elite Badminton Arena</h3>
+                        <div class="rating">⭐ 4.8</div>
+                    </div>
+                    <div class="location">📍 Downtown, New York</div>
+                    <div class="capacity-reviews">👥 Capacity: 8 • (127 reviews)</div>
+                    <div class="card-footer">
+                        <div class="price">$45<span>/hour</span></div>
+                        <button class="btn btn-quick-book">Quick Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stadium-card">
+                <div style="position: relative;">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%23d2b48c' width='400' height='300'/%3E%3Ccircle fill='%23ff6b35' cx='200' cy='150' r='40'/%3E%3Crect fill='%23333' x='150' y='280' width='100' height='5'/%3E%3C/svg%3E" alt="Basketball Center" class="stadium-img">
+                    <div class="sport-badge">Basketball</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Pro Basketball Center</h3>
+                        <div class="rating">⭐ 4.9</div>
+                    </div>
+                    <div class="location">📍 Midtown, New York</div>
+                    <div class="capacity-reviews">👥 Capacity: 20 • (203 reviews)</div>
+                    <div class="card-footer">
+                        <div class="price">$85<span>/hour</span></div>
+                        <button class="btn btn-quick-book">Quick Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stadium-card">
+                <div style="position: relative;">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%23d86828' width='400' height='300'/%3E%3Crect fill='%23fff' x='180' y='100' width='40' height='120'/%3E%3Cpath fill='%23333' d='M150 220 L250 220 L250 225 L150 225 Z'/%3E%3C/svg%3E" alt="Tennis Courts" class="stadium-img">
+                    <div class="sport-badge">Tennis</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Premium Tennis Courts</h3>
+                        <div class="rating">⭐ 4.7</div>
+                    </div>
+                    <div class="location">📍 Brooklyn, New York</div>
+                    <div class="capacity-reviews">👥 Capacity: 4 • (156 reviews)</div>
+                    <div class="card-footer">
+                        <div class="price">$60<span>/hour</span></div>
+                        <button class="btn btn-quick-book">Quick Book</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="view-all">
+            <a href="#browse">View All Stadiums →</a>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" style="background: #F8F9FA;">
+        <div class="section-header">
+            <h2>How It Works</h2>
+            <p>Book your favorite sport in 4 easy steps</p>
+        </div>
+
+        <div class="steps">
+            <div class="step">
+                <div class="step-icon">🔍</div>
+                <h3>Search</h3>
+                <p>Find stadiums by location, sport, and availability</p>
+            </div>
+            <div class="step">
+                <div class="step-icon">📅</div>
+                <h3>Book</h3>
+                <p>Select your preferred time slot and stadium</p>
+            </div>
+            <div class="step">
+                <div class="step-icon">✅</div>
+                <h3>Confirm</h3>
+                <p>Complete secure payment and get instant confirmation</p>
+            </div>
+            <div class="step">
+                <div class="step-icon">🏆</div>
+                <h3>Play!</h3>
+                <p>Show up and enjoy your game</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section>
+        <div class="section-header">
+            <h2>Why Choose InBook</h2>
+            <p>Everything you need for hassle-free bookings</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <div class="feature-content">
+                    <h3>Real-time Availability</h3>
+                    <p>See live stadium availability and book instantly</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔒</div>
+                <div class="feature-content">
+                    <h3>Secure Payments</h3>
+                    <p>Multiple payment options with 100% security</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📱</div>
+                <div class="feature-content">
+                    <h3>Mobile Friendly</h3>
+                    <p>Book on the go from any device</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">💬</div>
+                <div class="feature-content">
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer assistance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <div class="cta-section">
+        <h2>Ready to Play Your Favorite Sport?</h2>
+        <div class="cta-buttons">
+            <a href="#register" class="btn-cta btn-primary">Book Now</a>
+            <a href="#browse" class="btn-cta btn-secondary">Browse Locations</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>InBook</h3>
+                <p>Your one-stop platform for booking premium indoor stadiums</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#browse">Browse</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Sports</h3>
+                <ul>
+                    <li><a href="#">Badminton</a></li>
+                    <li><a href="#">Basketball</a></li>
+                    <li><a href="#">Tennis</a></li>
+                    <li><a href="#">Football</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="mailto:info@sportshub.com">info@sportshub.com</a></li>
+                    <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 InBook. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Quick Book buttons
+        document.querySelectorAll('.btn-quick-book').forEach(btn => {
+            btn.addEventListener('click', () => {
+                alert('Booking feature coming soon! This will redirect to the booking page.');
+            });
+        });
+    </script>
+</body>
+</html>
