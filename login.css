@@ -1,6 +1,10 @@
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+
 body {
   background: #f3f3f3;
-  font-family: Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;;
   display: flex;
   justify-content: center;
   align-items: center;
