@@ -2,12 +2,11 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Open Sans', sans-serif;
+            
         }
 
         body {
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-            /* font-family: 'Open Sans', sans-serif; */
+            font-family: 'Open Sans', sans-serif;
             color: #343A40;
             overflow-x: hidden;
         }
@@ -41,7 +40,6 @@
         }
 
         .logo-icon {
-           
             border-radius: 8px;
             display: flex;
             align-items: center;
@@ -60,7 +58,8 @@
 
         .nav-links a {
             text-decoration: none;
-            color: #343A40;
+            /* color: #343A40; */
+            background: linear-gradient(to bottom, #3cb371, #2E8B57);
             font-weight: 600;
             transition: color 0.3s;
         }
@@ -84,12 +83,13 @@
             cursor: pointer;
         }
 
-        .btn-login {
+        .btn btn-login {
             background: transparent;
-            color: #343A40;
+            color: white;
+            background: linear-gradient(to bottom, #3cb371, #2E8B57);
         }
 
-        .btn-register {
+        .btn btn-register {
             background: linear-gradient(to bottom, #3cb371, #2E8B57);
             color: white;
         }
