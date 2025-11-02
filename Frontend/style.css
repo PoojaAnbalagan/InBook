@@ -2,10 +2,12 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
         }
 
         body {
-            font-family: 'Open Sans', sans-serif;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+            /* font-family: 'Open Sans', sans-serif; */
             color: #343A40;
             overflow-x: hidden;
         }
@@ -88,7 +90,7 @@
         }
 
         .btn-register {
-            background: #2E8B57;
+            background: linear-gradient(to bottom, #3cb371, #2E8B57);
             color: white;
         }
 
@@ -171,7 +173,7 @@
         }
 
         .search-btn {
-            background: #2E8B57;
+            background: linear-gradient(to bottom, #3cb371, #2E8B57);
             color: white;
             padding: 1rem 2rem;
             border-radius: 8px;
