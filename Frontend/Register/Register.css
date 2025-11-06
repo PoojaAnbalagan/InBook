@@ -1,0 +1,218 @@
+ * {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            
+            padding: 20px;
+        }
+
+        /* Main container with split layout */
+        .main-wrapper {
+            display: flex;
+            width: 900px;
+            min-height: 550px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Left side - Image section with glassmorphism */
+        .image-section {
+            flex: 1;
+            background: linear-gradient(to bottom, #00a89e, #39d473);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            color: white;
+            position: relative;
+        }
+
+        .image-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .image-section .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .image-section h1 {
+            font-size: 55px;
+            margin-bottom: 0px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .image-section p {
+            font-size: 1.3em;
+            line-height: 1.2;
+            font-weight: 500;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Right side - Register form with glassmorphism */
+        .login-container {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 60px 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-left: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .login-container h2 {
+            color: #00a89e;
+            font-size: 2em;
+            margin-bottom: 30px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid rgba(0, 168, 158, 0.2);
+            border-radius: 10px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1em;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #00a89e;
+            background: white;
+            box-shadow: 0 0 0 3px rgba(0, 168, 158, 0.1);
+        }
+
+        input::placeholder {
+            color: #999;
+        }
+
+        button {
+            background: linear-gradient(to bottom, #00a89e, #39d473);
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 168, 158, 0.3);
+        }
+
+        button:hover {
+            background: linear-gradient(to bottom, #008d85, #32c468);
+            box-shadow: 0 6px 20px rgba(0, 168, 158, 0.4);
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .register-link {
+            text-align: center;
+            margin-top: 25px;
+            color: #333;
+            font-size: 0.95em;
+        }
+
+        .register-link a {
+            color: #00a89e;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .register-link a:hover {
+            color: #008d85;
+        }
+
+        .error-message {
+            background: rgba(255, 0, 0, 0.1);
+            color: #c33;
+            padding: 12px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 4px solid #c33;
+            font-size: 0.9em;
+        }
+
+        .success-message {
+            background: rgba(0, 255, 0, 0.1);
+            color: #2a7d2e;
+            padding: 12px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 4px solid #2a7d2e;
+            font-size: 0.9em;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .main-wrapper {
+                flex-direction: column;
+                width: 90%;
+                height: auto;
+                max-height: 90vh;
+            }
+            
+            .image-section {
+                min-height: 200px;
+            }
+            
+            .image-section h1 {
+                font-size: 35px;
+            }
+
+            .image-section p {
+                font-size: 1em;
+            }
+            
+            .login-container {
+                padding: 40px 30px;
+            }
+
+            .login-container h2 {
+                font-size: 1.5em;
+            }
+        }
