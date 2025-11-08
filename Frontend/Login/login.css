@@ -5,8 +5,6 @@
   box-sizing: border-box;
 }
 
-
-
 body {
   display: flex;
   justify-content: center;
@@ -29,14 +27,10 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Left side - Image section */
+/* Left side - Image section with glassmorphism */
 .image-section {
   flex: 1;
-  /* background: linear-gradient(135deg, rgba(38, 152, 88, 0.9), rgba(16, 94, 52, 0.9))
-              ; */
-              /* background: linear-gradient(90deg, #A8E063 0%, #56AB2F 100%); */
-              background: linear-gradient(to bottom, #00a89e, #39d473);
-
+  background: linear-gradient(to bottom, #00a89e, #39d473);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,10 +47,9 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  /* background: rgba(46, 139, 87, 0.3); */
-  background: linear-gradient(to bottom, #00a89e, #39d473);
-
-  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .image-section .content {
@@ -67,19 +60,19 @@ body {
 
 .image-section h1 {
   font-size: 55px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   font-weight: 700;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .image-section p {
   font-size: 1.3em;
-  line-height: 1.6;
+  line-height: 1.2;
   font-weight: 500;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* Right side - Login form */
+/* Right side - Login form with glassmorphism */
 .login-container {
   flex: 1;
   background: rgba(255, 255, 255, 0.95);
@@ -93,7 +86,7 @@ body {
 }
 
 .login-container h2 {
-  color: #2E8B57;
+  color: #00a89e;
   font-size: 2em;
   margin-bottom: 30px;
   font-weight: 600;
@@ -108,19 +101,21 @@ body {
 input {
   width: 100%;
   padding: 15px;
-  border: 2px solid rgba(46, 139, 87, 0.2);
+  border: 2px solid rgba(0, 168, 158, 0.2);
   border-radius: 10px;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   transition: all 0.3s ease;
   outline: none;
 }
 
 input:focus {
-  border-color: #2E8B57;
+  border-color: #00a89e;
   background: white;
-  box-shadow: 0 0 0 3px rgba(46, 139, 87, 0.1);
+  box-shadow: 0 0 0 3px rgba(0, 168, 158, 0.1);
 }
 
 input::placeholder {
@@ -128,7 +123,6 @@ input::placeholder {
 }
 
 button {
-  
   background: linear-gradient(to bottom, #00a89e, #39d473);
   color: white;
   padding: 15px;
@@ -140,13 +134,13 @@ button {
   font-weight: 600;
   margin-top: 10px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(46, 139, 87, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 168, 158, 0.3);
 }
 
 button:hover {
-  background: linear-gradient(135deg, #1e5a3a, #2E8B57);
-  /* transform: translateY(-2px); */
-  box-shadow: 0 6px 20px rgba(46, 139, 87, 0.4);
+  background: linear-gradient(to bottom, #008d85, #32c468);
+  box-shadow: 0 6px 20px rgba(0, 168, 158, 0.4);
+  transform: translateY(-2px);
 }
 
 button:active {
@@ -161,15 +155,14 @@ button:active {
 }
 
 .register-link a {
-  color: #2E8B57;
+  color: #00a89e;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
 }
 
 .register-link a:hover {
-  color: #1e5a3a;
-  /* text-decoration: underline; */
+  color: #008d85;
 }
 
 /* Responsive design */

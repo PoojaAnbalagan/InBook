@@ -1,8 +1,8 @@
 * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            
+            box-sizing: border-box; 
+               
         }
 
         body {
@@ -37,6 +37,7 @@
             font-weight: 700;
             font-size: 1.3rem;
             color: #2E8B57;
+            
         }
 
         .logo-icon {
@@ -50,6 +51,14 @@
             padding-left: 80px;
         }
 
+        .logo h1{
+            background: linear-gradient(to right, #00a89e, #39d473);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            
+        }
+
         .nav-links {
             display: flex;
             gap: 2rem;
@@ -58,8 +67,8 @@
 
         .nav-links a {
             text-decoration: none;
-            /* color: #343A40; */
-            background: linear-gradient(to bottom, #3cb371, #2E8B57);
+            color: #343A40;
+            
             font-weight: 600;
             transition: color 0.3s;
         }
@@ -83,14 +92,15 @@
             cursor: pointer;
         }
 
-        .btn btn-login {
+        .btn-login {
             background: transparent;
-            color: white;
-            background: linear-gradient(to bottom, #3cb371, #2E8B57);
+            color: #343A40;
+            border: #00a89e 2px solid ;
+            
         }
 
-        .btn btn-register {
-            background: linear-gradient(to bottom, #3cb371, #2E8B57);
+        .btn-register {
+            background: linear-gradient(to bottom, #00a89e, #39d473);
             color: white;
         }
 
@@ -103,12 +113,14 @@
         /* Hero Section */
         .hero {
             background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23234" width="1200" height="600"/><path fill="%232E8B57" opacity="0.2" d="M0 300 Q300 200 600 300 T1200 300 V600 H0 Z"/></svg>');
+            url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23234" width="1200" height="600"/><path fill="%232E8B57" opacity="0.2" d="M0 300 Q300 200 600 300 T1200 300 V600 H0 Z"/></svg>');
+
             background-size: cover;
             background-position: center;
             padding: 8rem 5% 6rem;
             text-align: center;
             color: white;
+
         }
 
         .hero h1 {
@@ -148,6 +160,7 @@
             flex-wrap: wrap;
             box-shadow: 0 10px 40px rgba(0,0,0,0.2);
             animation: fadeInUp 1.2s ease-out;
+            font-family: 'Open Sans', sans-serif;
         }
 
         .search-field {
@@ -160,6 +173,7 @@
             border: 2px solid #F8F9FA;
             border-radius: 8px;
             background: #F8F9FA;
+            font-family: 'Open Sans', sans-serif;
         }
 
         .search-field select,
@@ -170,17 +184,29 @@
             flex: 1;
             color: #343A40;
             outline: none;
+            font-family: 'Open Sans', sans-serif;
         }
 
-        .search-btn {
-            background: linear-gradient(to bottom, #3cb371, #2E8B57);
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
+     .search-btn {
+        flex: 1;
+        background: linear-gradient(to bottom, #00a89e, #39d473);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 8px;
+        font-weight: 800;
+        cursor: pointer;
+        transition: all 0.3s;
+        font-family: 'Open Sans', sans-serif;
+        border: none;
+        font-size: 17px;
+}
+
+.search-btn img {
+    margin-right: 0.5rem;  /* Space after the icon */
+}
 
         .search-btn:hover {
             background: #246d43;
@@ -188,9 +214,13 @@
         }
 
         .btn-explore {
+            flex: 1;
+            gap: 1rem;
+            margin-bottom: 10px;
             display: inline-block;
-            background: #FF6B35;
-            color: white;
+            color: #343A40;
+            background: white ;
+            border: #00a857 3px solid;
             padding: 1rem 3rem;
             border-radius: 8px;
             text-decoration: none;
@@ -200,9 +230,11 @@
         }
 
         .btn-explore:hover {
-            background: #e55a2b;
+            background: linear-gradient(to bottom, #00a89e, #39d473);
+            border: 2px white solid;
+            color: white;
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(255, 107, 53, 0.4);
+            box-shadow: 0 8px 5 px rgba(255, 255, 255, 0.829);
         }
 
         /* Section Styles */
