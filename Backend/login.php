@@ -12,7 +12,7 @@ if (isset($_POST['login'])) {
 
     if (mysqli_num_rows($result) == 1) {
         $_SESSION['username'] = $username;
-        header("Location:  http://localhost/InBook/Frontend/index.html");
+        header("Location: ../Frontend/index.html");
         exit();
     } else {
         echo "<h3>Invalid username or password!</h3>";
