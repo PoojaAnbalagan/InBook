@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (isset($_SESSION['user_id'])) {
+    header("Location: Dashboard.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +21,6 @@
     <header>
         <nav>
             <div class="logo">
-                
                     <h1>InBook</h1>
             </div>
 
@@ -25,6 +32,9 @@
             </ul>
 
             <div class="auth-buttons">
+                <?php if (!$isLoggedIn): ?>
+                 <a href="admin-login.php" onclick="toggleMobileMenu()" style="background: #8B4513; color: white;">Admin</a>
+            <?php endif; ?>
                 <a href="Login/login.html" class="btn btn-login">Login</a>
                 <a href="../Backend/register.php" class="btn btn-register">Register</a>
             </div>
@@ -41,10 +51,10 @@
             <div class="search-field">
                 <span><img src="../assets/location-icon.png" alt="" width="30px" height="30px"></span>
                 <select>
-                    <option>Location</option>
-                    <option>Downtown</option>
-                    <option>Midtown</option>
-                    <option>Brooklyn</option>
+                    <option>Court</option>
+                    <option>Court 01</option>
+                    <option>Court 02</option>
+                    <option>Court 03</option>
                 </select>
             </div>
             <div class="search-field">
